@@ -1,0 +1,74 @@
+/* General Styles */
+.landing-page {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000; /* Dark background for contrast */
+}
+
+.content {
+  text-align: center;
+  color: #fff;
+  z-index: 10; /* Ensure content is above the particle background */
+}
+
+.typewriter-text {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #e0e0e0; /* Light grey color for contrast */
+  margin-bottom: 2rem;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 0.15em solid #fff; /* Typewriter effect */
+  animation: typing 3.5s steps(40, end), blink 0.75s step-end infinite;
+}
+
+/* Keyframes for typewriter effect */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  from, to { border-color: transparent; }
+  50% { border-color: #fff; }
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  background: linear-gradient(90deg, rgba(255, 87, 34, 1) 0%, rgba(255, 193, 7, 1) 100%);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+  background: linear-gradient(90deg, rgba(255, 87, 34, 1) 0%, rgba(255, 193, 7, 0.8) 100%);
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.sign-in {
+  background: #2196F3; /* Custom background color for "Sign In" */
+}
+
+.login {
+  background: #4CAF50; /* Custom background color for "Login" */
+}
